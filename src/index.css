@@ -1,0 +1,31 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: #e5e7eb;
+
+  background: linear-gradient(
+    -45deg,
+    #010314,
+    #0b1120,
+    #1e3a8a,
+    #020617,
+    #0b1120
+  );
+
+  background-size: 600% 600%;
+  animation: gradientMove 22s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}

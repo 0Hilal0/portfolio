@@ -1,0 +1,26 @@
+.footer {
+    background-color: rgb(79, 79, 79);
+    padding: 10px;
+    margin: 0px;
+    display: flex;   
+    justify-content: space-between;
+    align-items: center; 
+}
+
+.footer ul {
+    list-style: none;
+    display: flex;
+    padding: 0px;
+    margin: 10px;
+    gap: 20px;
+}
+
+.footer a {
+    color: black;
+}
+
+
+.footer li:hover {
+    color: red;
+    box-shadow: 10 10 10 10;
+}
