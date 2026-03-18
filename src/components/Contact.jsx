@@ -1,36 +1,42 @@
-import '../styles/contact.css'
+import "../styles/contact.css";
 
-function Contact(){
-    return(
-        <>
-            <div className="footer">
+function Contact() {
+  return (
+    <section id="contact" className="contact section-spacing">
+      <div className="contact-container">
+        <p className="section-label">Contact</p>
 
-                <h3>
-                Contact me
-                </h3>
+        <h2>Get in touch</h2>
 
-                <ul>
-                    <li>
-                        <a href="mailto:Hilalozkan47@icloud.com" target="_blank">
-                        Mail
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/0Hilal0" target="_blank">
-                        Github
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/hilal%C3%B6zkan/" target="_blank">
-                        Linked in
-                        </a>
-                    </li>
-                </ul>
+        <p className="contact-text">
+          I am currently a student, but actively building and improving my skills. 
+            Feel free to reach out if you want to connect or see what I am working on.
+        </p>
 
-            </div>
-            
-        </>
-    )
+        <div className="contact-links">
+          <a href="mailto:Hilalozkan47@icloud.com">Hilalozkan47@icloud.com</a>
+
+          <a
+            href="https://github.com/0Hilal0"
+            target="_blank"
+          >
+            GitHub
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/hilal%C3%B6zkan/"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+        </div>
+
+        <p className="contact-footer">
+          © {new Date().getFullYear()} Hilal Özkan
+        </p>
+      </div>
+    </section>
+  );
 }
 
 export default Contact;

@@ -1,26 +1,44 @@
-.footer {
-    background-color: rgb(79, 79, 79);
-    padding: 10px;
-    margin: 0px;
-    display: flex;   
-    justify-content: space-between;
-    align-items: center; 
+.contact {
+  text-align: left;
 }
 
-.footer ul {
-    list-style: none;
-    display: flex;
-    padding: 0px;
-    margin: 10px;
-    gap: 20px;
+.contact-container {
+  max-width: 800px;
+  margin: 0 auto;
 }
 
-.footer a {
-    color: black;
+.contact h2 {
+  font-size: 36px;
+  margin-bottom: 16px;
+  color: #e2e8f0;
 }
 
+.contact-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #94a3b8;
+  margin-bottom: 32px;
+  max-width: 600px;
+}
 
-.footer li:hover {
-    color: red;
-    box-shadow: 10 10 10 10;
+.contact-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-links a {
+  font-size: 1rem;
+  color: #3b82f6;
+  text-decoration: none;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+.contact-footer {
+  margin-top: 48px;
+  font-size: 0.85rem;
+  color: #64748b;
 }

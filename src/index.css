@@ -1,31 +1,75 @@
-body {
+/* RESET */
+* {
   margin: 0;
-  min-height: 100vh;
-  color: #e5e7eb;
-
-  background: linear-gradient(
-    -45deg,
-    #010314,
-    #0b1120,
-    #1e3a8a,
-    #020617,
-    #0b1120
-  );
-
-  background-size: 600% 600%;
-  animation: gradientMove 22s ease infinite;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@keyframes gradientMove {
-  0% {
-    background-position: 0% 50%;
-  }
+/* ROOT VARIABLES */
+:root {
+  --bg: #0f172a;
+  --text: #e2e8f0;
+  --text-secondary: #94a3b8;
+  --border: rgba(255, 255, 255, 0.08);
+  --accent: #3b82f6;
 
-  50% {
-    background-position: 100% 50%;
-  }
+  --max-width: 1100px;
+}
 
-  100% {
-    background-position: 0% 50%;
-  }
+/* BODY */
+body {
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* GLOBAL CONTAINER */
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* HEADINGS */
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 36px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* TEXT */
+p {
+  color: var(--text-secondary);
+}
+
+/* LINKS */
+a {
+  color: inherit;
+}
+
+/* SECTIONS */
+section {
+  width: 100%;
+}
+
+/* SPACING SYSTEM */
+.section-spacing {
+  padding: 100px 24px;
+}
+
+/* BUTTON BASE */
+button {
+  font-family: inherit;
+  cursor: pointer;
 }

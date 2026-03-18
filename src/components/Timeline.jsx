@@ -1,39 +1,25 @@
 import "../styles/timeline.css";
-import timeLine from "../data/timeline";
+import timeline from "../data/timeline";
 
 function Timeline() {
   return (
-    <section className="timeline">
-      <h3>My timeline</h3>
+    <section id="timeline" className="timeline section-spacing">
+      <div className="timeline-container">
+        <p className="section-label">Journey</p>
+        <h2>My journey</h2>
 
-      <div className="timeline-div">
-        {timeLine.map((event, index) => (
-          <div key={index} className="timeline-row">
-            <div className="timeline-side left-side">
-              {index % 2 === 0 && (
-                <div className="timelineContainer left">
-                  <p className="timeline-year">{event.year}</p>
-                  <p className="timeline-title">{event.title}</p>
-                  <p className="timeline-description">{event.description}</p>
-                </div>
-              )}
-            </div>
+        <div className="timeline-list">
+          {timeline.map((item, index) => (
+            <div key={index} className="timeline-item">
+              <div className="timeline-date">{item.date}</div>
 
-            <div className="timeline-center">
-              <div className="timeline-dot"></div>
+              <div className="timeline-content">
+                <h3>{item.title}</h3>
+                <p>{item.description}</p>
+              </div>
             </div>
-
-            <div className="timeline-side right-side">
-              {index % 2 !== 0 && (
-                <div className="timelineContainer right">
-                  <p className="timeline-year">{event.year}</p>
-                  <p className="timeline-title">{event.title}</p>
-                  <p className="timeline-description">{event.description}</p>
-                </div>
-              )}
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

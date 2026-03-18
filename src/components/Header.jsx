@@ -1,30 +1,34 @@
-import '../styles/header.css'
+import "../styles/header.css";
 
-function Header () {
-    return(
-        <>
-        <div className='navbar'>
-            <h1>
-                Hilal Özkan
-            </h1>
-            <ul>
-                <li>
-                    About me
-                </li>
-                <li>
-                    Projects
-                </li>
-                <li>
-                    Timeline
-                </li>
-                <li>
-                    Contact
-                </li>
-            </ul>
-        </div>
+function Header() {
+  return (
+    <header className="navbar">
+      <div className="nav-container">
+        <a href="#top" className="logo">
+          Hilal Özkan
+        </a>
 
-        </>
-    );
+        <nav>
+          <ul className="nav-links">
+            <li>
+              <a href="#about">About</a>
+            </li>
+            <li>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#timeline">Journey</a>
+            </li>
+            <li>
+              <a href="#contact" className="nav-cta">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+  );
 }
 
 export default Header;
