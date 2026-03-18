@@ -4,7 +4,7 @@ function Hero() {
   return (
     <section className="hero" id="top">
       <div className="hero-content">
-        <p className="hero-kicker">Portfolio / CV</p>
+        <p className="hero-kicker"></p>
 
         <h1>Hilal Özkan</h1>
 
