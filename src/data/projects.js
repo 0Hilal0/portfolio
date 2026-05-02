@@ -1,5 +1,12 @@
 const projects = [
   {
+    title: "Sportson intranet(Group Project)",
+    description:
+    "First group project built together with .Net developers and testers. I led the DevOps and cloud work, set up the full Azure enviroment(App service plan, App service, Key vault) and built the CI/CD pipeline in Azure Devops. Also acted as Scrum Master for the team",
+    tools: "C#, ASP.Net, React, Azure, Azure DevOps, CI/CD",
+    link: "https://github.com/0Hilal0/Sportson-Intranet-Group-Project"
+  },
+  {
     title: "QuizGameWeb",
     description:
       "Fullstack quiz application with frontend and backend integration. Focused on API communication, data handling, and application flow.",

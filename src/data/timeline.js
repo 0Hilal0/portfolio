@@ -36,10 +36,16 @@ const timeline = [
       "I built my first website with HTML and CSS, and then continued with QuizGameWeb in JavaScript. This was a big step in connecting programming with web development.",
   },
   {
-    date: "Now",
-    title: "Moving towards cloud and modern development",
+    date: "Mars 2026",
+    title: "Started learning Azure and Dveops",
     description:
-      "Currently learning Azure and agile methods while continuing to build projects and improve step by step.",
+    "This was when i first got hands on with Azure and Azure DevOps through a cloud corse at school. I explored the Azure portal, tried creating different resources, and got familiar with how DevOps is structured. Most of it was self studied since the course itself was limited, but it gave me a solid base to build on before our first project started."
+  },
+  {
+    date: "Apr-May 2026",
+    title: "My first group project",
+    description:
+      "Started my first group project with .Net developers and testers, 10 people in total. I naturally took on the responsibility for the DevOps and cloud side since i was the first one to dive into the enviroment and lean it properly. I set up the full Azure enviroment with App service plan, App service and key vault, built the CI/CD pipeline in Azure DevOps that builds the frontend, embeds it into the backend and deploys to Azure on push to main. I also got the chance to act as Scrum Master for the whole group, leading daily standups and setting sprint goals. A really fun and educational project where i learned a lot in a short time.",
   },
 ];
 
