@@ -5,6 +5,7 @@ import AboutMe from './components/About'
 import Projects from './components/Projects'
 import Timeline from './components/Timeline'
 import Contact from './components/Contact'
+import { Analytics } from '@vercel/analytics/react'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Projects />
     <Timeline />
     <Contact />
+    <Analytics />
     </>
   )
 }
